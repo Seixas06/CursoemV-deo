@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Em qual país você nasceu? <input type="text" name="nac" id="nac">
+    <input type="button" value="Confirmar" onclick="Confirmar()" >
+    <div id="res">
+
+    </div>
+
+    <script>
+        function Confirmar(){
+            var paisht=document.querySelector('input#nac')
+            var res=document.querySelector('div#res')
+            var pais=paisht.value
+            res.innerHTML=`<p>Você nasceu no <strong>${pais}</strong></p>`
+            if (pais.toLowerCase()==='brasil'){
+                res.innerHTML+='Você é <strong>BRASILEIRO</strong>'
+            }
+            else{
+                res.innerHTML+='Você é <strong>ESTRANGEIRO</strong>'
+            }
+            }
+    </script>
+</body>
+</html>

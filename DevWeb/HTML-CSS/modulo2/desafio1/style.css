@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('fontes/BebasNeue-Regular.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Android';
+    src: url('fontes/idroid.otf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063d1e;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'Bebas Neue', cursive;
+    --fonte2: 'Android', sans-serif;
+}
+
+body{
+    background-color: #ebe5c5;
+    margin: 0;
+}
+
+header{
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+    text-shadow: 1px 2px 1px rgb(0, 0, 0);
+    height: 230px;
+    background-image: linear-gradient(to bottom, var(--cor3), rgba(0, 0, 0, 0.658));
+    
+}
+ 
+h1#main{
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 45px;
+    font-family: var(--fonte1);
+    padding-top: 40px;
+    margin: auto;
+}
+
+h2{
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 18px;
+    font-family: var(--fonte0);
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+nav#ctt{
+    background-color: var(--cor3);
+    padding-left: 15px;
+    padding-bottom: 7px;
+    background-image: linear-gradient(to top ,  rgba(0, 0, 0, 0.658))
+    
+}
+
+nav > a{
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--fonte0);
+    color: white;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+nav > a:hover{
+    color: var(--cor5);
+    background-color: var(--cor3);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+main{
+    min-width: 320px;
+    max-width: 830px;
+    margin: auto;
+}
+
+article{
+    background-color: white;
+    padding: 2px;
+    /*margin-right: 400px;
+    margin-left: 400px;*/
+    margin-bottom: 30px;
+    border-radius: 0px 0px 12px 12px;
+    padding-bottom: 20px;
+    box-shadow: -1px -3px 12px rgba(0, 0, 0, 0.514);
+}
+
+h1#txt{
+    font-style: normal;
+    font-size: 28px;
+    font-weight: lighter;
+    font-family: var(--fonte2);
+    color: var(--cor5);
+    padding-left: 20px;
+}
+
+h2#h2txt{
+    font-style: normal;
+    font-size: 22px;
+    font-family: var(--fonte2);
+    color: var(--cor4);
+    padding-top: 1px;
+    padding-left: 20px;
+    padding-bottom: 0;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    background-clip: padding-box;
+}
+
+p{
+    text-align: justify;
+    font-family: var(--fonte0);
+    padding-left: 20px;
+    padding-right: 20px;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+p > span{
+    color: var(--cor5);
+    font-weight: bold;
+}
+
+p > a{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--cor1);
+    color: var(--cor5);
+    padding: 1px 4px 1px 4px;
+}
+
+p > a:hover{
+    text-decoration: underline;
+}
+
+aside{
+    text-align: center;
+}
+
+picture{
+    display: block;
+}
+
+img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+img.pequena{
+    max-width: 350px;
+}
+
+div.video{
+    background-color: var(--cor5);
+    margin: 0 -2px 0 -2px;
+    padding: 30px 1px;
+    padding-bottom: 52.75%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+nav#listt{
+    background-color: var(--cor4);
+    font-size: 20px;
+    font-family: var(--fonte1);
+    color: white;
+    padding: 10px 10px;
+    margin-top: 30px;
+    margin-right: 16px;
+    margin-left: 16px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+aside#list{
+    background-color: var(--cor1);
+    margin-right: 16px;
+    margin-left: 16px;
+    padding: 1px 5px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+div#lista{
+    text-align: left;
+    font-family: var(--fonte0);
+    columns: 2;
+}
+
+ul{
+    list-style: none;
+}
+
+li::before{
+    content: "✓  " ;
+    font-weight: bold;
+}
+
+
+footer{
+    background-color: var(--cor5);
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-family: var(--fonte0);
+    padding: 5px;
+}
