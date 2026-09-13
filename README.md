@@ -1,4 +1,4 @@
 # CursoemVídeo
-Cursos Curso em vídeo Gustavo Guanabara 2025,2026,2027
+Cursos Curso em vídeo Gustavo Guanabara 2025,2026
 
-Todos os cursos feitos por Mateus Seixas durante o ensino médio.
+Todos os cursos feitos por Mateus Seixas
