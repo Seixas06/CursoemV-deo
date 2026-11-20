@@ -22,4 +22,4 @@ for pessoa in range(1,5):
 #Apresenta os dados recolhidos
 print('A média de idade do grupo é de {:.0f} anos'.format(media))
 print('O homem mais velho tem {} anos e se chama {}'.format(maiorh,nomevelhoh))
-print('Ao todo são {} mulheres com menos de 20 anos'.format(menor20))
+print('Ao todo são {} homens com menos de 20 anos'.format(menor20))

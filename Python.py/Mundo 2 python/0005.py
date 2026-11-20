@@ -8,7 +8,7 @@ n2=float(input('Digite a 2º nota: '))
 
 #Calcula média e apresenta
 media=(n1+n2)/2
-print('A média entre {;.1f} e {:.1f} é {:.1f}'.format(n1,n2,media))
+print('A média entre {:.1f} e {:.1f} é {:.1f}'.format(n1,n2,media))
 #determina possibilidades
 if media<5:
     print('Você foi \033[1;31mREPROVADO\033[m')
